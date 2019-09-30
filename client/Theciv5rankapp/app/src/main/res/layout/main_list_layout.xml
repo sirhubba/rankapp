@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/Rank"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="40"
+        android:gravity="center"
+        android:text="1"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/Player"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:text="Player"
+        android:textAlignment="viewStart"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/Rating"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="40"
+        android:gravity="center"
+        android:text="100"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+
+</LinearLayout>

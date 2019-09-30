@@ -1,0 +1,8 @@
+Söka ut alla matcher där en spelare deltagit baserat på steamID:
+select nick, date, end_pos, civ, victory_type from player join ingame_player on player.steam_id = ingame_player.steam_id join game on ingame_player.game_id = game.game_id where ingame_player.game_id in (select game_id from game natural join ingame_player where ingame_player.steam_id='abc1');
+
+starta winstone:
+java -jar winstone.jar --webroot webroot
+
+Söka ut alla matcher i databasen:
+SELECT nick, date, end_pos FROM player JOIN ingame_player ON player.steam_id = ingame_player.steam_id JOIN game ON ingame_player.game_id = game.game_id ORDER BY date;
